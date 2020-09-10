@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=/favicon.ico><title>bms_app</title><style>html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+      .app .preloader {
+        position: fixed;
+        display: none;
+        top: 0;
+        left: 0;
+        bottom:0;
+        right: 0;
+      }
+      .app .preloader.run {
+        display: flex;
+      }
+      .app .preloader:before {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        left: 50%;
+        top: 50%;
+        margin-left: -30px;
+        margin-top: -30px;
+        background: green;
+        border-radius: 50%;
+        background: center center url('data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAyMDAxMDkwNC8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9UUi8yMDAxL1JFQy1TVkctMjAwMTA5MDQvRFREL3N2ZzEwLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMzYwMCAzNjAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBtZWV0Ij4NCjxnIGlkPSJsYXllcjEwMSIgZmlsbD0iIzg3YTkzZSIgc3Ryb2tlPSJub25lIj4NCjxwYXRoIGQ9Ik0zMjI3IDI2MTUgYy02MCAtMzUgLTExNCAtNjggLTExOSAtNzMgLTcgLTcgLTMgLTI0IDE0IC01NCAzNiAtNjEgODQgLTE3OSAxMTMgLTI3OCA4MCAtMjc0IDcxIC02MTYgLTI1IC05MDAgLTMxIC05MyAtMTEwIC0yNTIgLTE2OCAtMzQwIC0yMDkgLTMxNSAtNTU3IC01NTUgLTkxNCAtNjMxIC02OCAtMTQgLTY2IC00IC0zNiAtMTc1IDE0IC04MSAyNiAtMTI0IDM0IC0xMjQgNyAwIDY1IDE0IDEyOSAzMCAzMTYgODIgNTc3IDIzMSA4MTAgNDY1IDI5OSAzMDEgNDY2IDY1NCA1MTUgMTA5MCAyNiAyMzMgLTQgNDg1IC04NyA3MzcgLTM3IDExMiAtMTMxIDMxMSAtMTQ4IDMxNCAtNSAxIC01OSAtMjYgLTExOCAtNjF6Ii8+DQo8L2c+DQo8ZyBpZD0ibGF5ZXIxMDIiIGZpbGw9IiNmMDY2MjEiIHN0cm9rZT0ibm9uZSI+DQo8cGF0aCBkPSJNMTYwNSAzNTc4IGMtMTAwIC0xMSAtMjg3IC01MiAtMzg1IC04NCAtMTAzIC0zNCAtMzA0IC0xMzIgLTQwMyAtMTk3IC0xOTQgLTEyNiAtMzkwIC0zMjcgLTUyNiAtNTM2IGwtNDEgLTY0IDExOCAtNjggYzY0IC0zOCAxMjIgLTY5IDEyOCAtNjkgNiAwIDM3IDM5IDY5IDg3IDE0OCAyMTggMzkwIDQxNCA2NDYgNTI1IDM0MCAxNDYgNzUyIDE1NyAxMDk5IDI4IDIwNSAtNzYgNDA2IC0yMDUgNTUyIC0zNTQgbDc3IC03OSA3MSA1OCBjMzggMzEgODkgNzQgMTExIDk0IGw0MiAzNyAtOTkgMTAwIGMtMzA0IDMwNSAtNjYxIDQ3NiAtMTA5NiA1MjMgLTExMiAxMyAtMjQ5IDEyIC0zNjMgLTF6Ii8+DQo8L2c+DQo8ZyBpZD0ibGF5ZXIxMDMiIGZpbGw9IiMwMWI5ZTgiIHN0cm9rZT0ibm9uZSI+DQo8cGF0aCBkPSJNOTcgMjM1MyBjLTU5IC0xODYgLTc4IC0zMDAgLTg0IC01MDggLTYgLTIwMSA4IC0zMzMgNTQgLTUxMCAxNTggLTYwNyA2NDUgLTExMDAgMTI0NiAtMTI2MCAxMzkgLTM3IDMwOSAtNjUgNDAwIC02NSBsNzcgMCAwIDE0NSAwIDE0NSAtNDcgMCBjLTI3IDAgLTkzIDcgLTE0OCAxNSAtNjE2IDkwIC0xMTE1IDU0MyAtMTI1MyAxMTQwIC01OSAyNTYgLTUwIDU3MCAyMiA3NzQgOSAyNCAxNiA1MSAxNiA2MCAwIDE0IC04OCA1MSAtMjU2IDEwOCAtNyAzIC0xOSAtMTcgLTI3IC00NHoiLz4NCjwvZz4NCjwvc3ZnPg==') no-repeat;
+        background-size: contain;
+        -webkit-animation: rotating 1.5s linear infinite;
+        -moz-animation: rotating 1.5s linear infinite;
+        -ms-animation: rotating 1.5s linear infinite;
+        -o-animation: rotating 1.5s linear infinite;
+        animation: rotating 1.5s linear infinite;
+      }
+      @-webkit-keyframes rotating /* Safari and Chrome */ {
+        from {
+          -webkit-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        to {
+          -webkit-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes rotating {
+        from {
+          -ms-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -webkit-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        to {
+          -ms-transform: rotate(360deg);
+          -moz-transform: rotate(360deg);
+          -webkit-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }</style><link href=/css/app.1a864e28.css rel=preload as=style><link href=/js/app.9a9196ef.js rel=preload as=script><link href=/js/chunk-vendors.2b1ad2ec.js rel=preload as=script><link href=/css/app.1a864e28.css rel=stylesheet></head><body><noscript><strong>We're sorry but this doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=bms_app class=app><div class=preloader></div><script>setTimeout(function() {
+          var preloader = document.querySelector('#bms_app .preloader');
+          if (preloader) {
+            preloader.classList.add('run');
+            console.log('add preloader')
+          }
+        }, 200);</script></div><script src=/js/chunk-vendors.2b1ad2ec.js></script><script src=/js/app.9a9196ef.js></script></body></html>
