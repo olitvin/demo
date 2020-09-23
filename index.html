@@ -72,10 +72,35 @@
                 -o-transform: rotate(360deg);
                 transform: rotate(360deg);
             }
-        }</style><link href=/demo/css/app.f68dd877.css rel=preload as=style><link href=/demo/js/app.a58a4b54.js rel=modulepreload as=script><link href=/demo/js/chunk-vendors.fcb40015.js rel=modulepreload as=script><link href=/demo/css/app.f68dd877.css rel=stylesheet></head><body><noscript><strong>We're sorry but this doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=bms_app class=app><div class=preloader></div><script>setTimeout(function() {
+        }</style><link href=/demo/css/app.70bc3e40.css rel=preload as=style><link href=/demo/js/app.3300ce65.js rel=modulepreload as=script><link href=/demo/js/chunk-vendors.5f211c72.js rel=modulepreload as=script><link href=/demo/css/app.70bc3e40.css rel=stylesheet></head><body><noscript><strong>We're sorry but this doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=bms_app class=app><div class=preloader></div><script>setTimeout(function() {
                 var preloader=document.querySelector('#bms_app .preloader');
                 if(preloader) {
                     preloader.classList.add('run');
                     console.log('add preloader')
                 }
-            },200);</script></div><script type=module src=/demo/js/chunk-vendors.fcb40015.js></script><script type=module src=/demo/js/app.a58a4b54.js></script><script>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()},!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script><script src=/demo/js/chunk-vendors-legacy.92c7f141.js nomodule></script><script src=/demo/js/app-legacy.da37c8a8.js nomodule></script></body></html>
+            },200);</script></div><script>var refScript=document.getElementsByTagName("script")[0];
+        var rcScript=document.createElement("script");
+
+        rcScript.async=true;
+        rcScript.crossOrigin="anonymous";
+        rcScript.src="https://app.therootcause.io/rootcause-core.js";
+
+        rcScript.addEventListener("load",onRCLoaded);
+        refScript.parentNode.insertBefore(rcScript,refScript);
+
+        function onRCLoaded() {
+            var logger=window.RC&&new RC.Logger({
+                applicationId: "b294cd35866b2f0da914038d43114f6ae5909c20",
+                recordSessionVideo: false,
+                captureScreenshot: true,
+                recordUserActions: false,
+                logConsoleOutput: true,
+                logAjaxRequests: false,
+                treatFailedAjaxAsError: false,
+                logResourceLoadFailures: true,
+                showNotificationOnError: true,
+                showFeedbackButton: false,
+                showErrorDialog: false,
+                maxNbrOfReportedErrors: 10
+            });
+        }</script><script type=module src=/demo/js/chunk-vendors.5f211c72.js></script><script type=module src=/demo/js/app.3300ce65.js></script><script>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()},!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script><script src=/demo/js/chunk-vendors-legacy.4e64187f.js nomodule></script><script src=/demo/js/app-legacy.3948aef8.js nomodule></script></body></html>
