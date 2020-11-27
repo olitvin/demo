@@ -1,0 +1,169 @@
+.bm-video-player__footer {
+    background-color: rgba(28, 28, 28, 0.9) !important;   
+}
+
+.bm-video-player__footer--mobile {
+    background-color: transparent !important;
+}
+
+.bm-video-player__footer svg {
+    fill: #ffffff !important;
+}
+
+.bm-video-player__footer-left span {
+    color: #ffffff !important;
+}
+
+.bm-video-player__footer-button span {
+    color: #ffffff !important;
+}
+
+.bm-video-player__popup {
+    background-color: rgba(39, 39, 39, 0.97) !important;
+}
+
+.bm-video-player__popup h4,
+.bm-video-player__popup label,
+.bm-video-player__popup span {
+    color: #ffffff !important;
+}
+
+.bm-video-player__settings .slider,
+.settings__item-value .slider {
+    background-color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.bm-video-player__settings input:checked + .slider,
+.settings__item-value input:checked + .slider  {
+    background-color: #4A86CE !important;
+}
+
+.bm-video-player__settings .subtitle-choice--hidden button {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.bm-video-player__settings .subtitle-choice--hidden button::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.03652 13.6582C1.80243 13.8861 1.51685 14 1.17978 14C0.85206 14 0.571161 13.8861 0.337079 13.6582H0.351124C0.117041 13.4303 0 13.1569 0 12.8379C0 12.5189 0.117041 12.2454 0.351124 12.0176L5.49859 7.00097L0.351124 1.99609C0.117041 1.76823 0 1.49023 0 1.16211C0 0.843099 0.117041 0.569661 0.351124 0.341797C0.585206 0.113932 0.866105 0 1.19382 0C1.52154 0 1.80243 0.113932 2.03652 0.341797L7.187 5.35547C7.187 5.35547 8.00027 6.09175 8 7C7.99973 7.90772 7.18799 8.64356 7.18799 8.64356L2.03652 13.6582Z' fill='white' fill-opacity='0.7'/%3E%3C/svg%3E") !important;
+}
+
+.bm-video-player__radio-btn-list label:hover,
+.information-block__quiz .container:hover {
+    background-color: #083B77 !important;
+}
+
+.bm-video-player__popup::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='16' viewBox='0 0 20 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.99997 16L1.39876e-06 -3.6558e-06L20 -1.90735e-06L9.99997 16Z' fill='%23272727' fill-opacity='0.97'/%3E%3C/svg%3E") !important;
+}
+
+.bm-video-player__settings.show-triangle.bm-video-player__settings::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='16' viewBox='0 0 20 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.99997 16L1.39876e-06 -3.6558e-06L20 -1.90735e-06L9.99997 16Z' fill='%23272727' fill-opacity='0.97'/%3E%3C/svg%3E") !important;
+}
+
+.bm-video-player__templates {
+    background-color: #1C1C1C !important;
+}
+
+.information-block__header h2,
+.information-block__caption,
+.information-block__quiz,
+.bm-video-player__templates-tabs button,
+.chat__container,
+.playlist__container,
+.playlist__item h3,
+.chat__message .text-message,
+.chat__message .time-message,
+.chat__form-message .quote-message .text-message,
+.bm-video-player__settings .subtitle-choice--show button,
+.bm-video-player__settings .audio-track-choice--show button,
+.settings__header h2,
+.settings__item-name,
+.settings__item-value {
+    color: #ffffff !important;
+}
+
+.bm-video-player__templates-tabs button:hover {
+    color: #2883F0 !important;
+}
+
+.information-block__header-buttons svg,
+.bm-video-player__templates-btn-close svg,
+.chat__header-buttons button svg,
+.playlist__header-buttons button svg,
+.chat__body svg,
+.chat__form-buttons-wrap svg,
+.settings__header svg,
+.chat__form-name-input button svg {
+    fill: #ffffff !important;
+}
+
+.information-block__quiz .checkmark,
+.information-block__quiz .checkmark-checkbox {
+    border-color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.information-block__quiz .container input:checked ~ .checkmark,
+.information-block__quiz .container input:checked ~ .checkmark-checkbox {
+    border-color: #4A86CE !important;
+}
+
+.information-block__quiz .container .checkmark-checkbox:after {
+    border-color: #1C1C1C !important;
+}
+
+.playlist__author,
+.playlist__info time {
+    color: #E0E0E0 !important;
+}
+
+.playlist__item:hover,
+.chat__message:hover,
+.chat__message:hover .quote-message {
+    background-color: #083B77 !important;
+}
+
+.chat__message--administrator .time-message, 
+.chat__message--administrator .name-message {
+    color: #1C1C1C !important;
+}
+
+.chat__message .quote-message,
+.chat__form-message .quote-message {
+    background-color: #142538 !important;
+}
+
+.chat__user-name,
+.chat__form-numbers {
+    color: #E0E0E0 !important;
+}
+
+.chat__form-name input,
+.chat__form-message textarea {
+    background: #1C1C1C !important;
+    border: 1px solid #333333 !important;
+    color: #747474 !important;
+    -webkit-text-fill-color: #747474 !important;
+}
+
+.bm-video-player__settings .subtitle-choice--show h4::before,
+.bm-video-player__settings .audio-track-choice--show h4::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.96348 0.341797C6.19756 0.113932 6.48315 -2.83387e-07 6.82022 -2.98122e-07C7.14794 -3.12446e-07 7.42884 0.113932 7.66292 0.341797L7.64888 0.341797C7.88296 0.569662 8 0.843099 8 1.16211C8 1.48112 7.88296 1.75456 7.64888 1.98242L2.50141 6.99903L7.64888 12.0039C7.88296 12.2318 8 12.5098 8 12.8379C8 13.1569 7.88296 13.4303 7.64888 13.6582C7.41479 13.8861 7.13389 14 6.80618 14C6.47846 14 6.19757 13.8861 5.96348 13.6582L0.812995 8.64453C0.812995 8.64453 -0.00027282 7.90825 -3.0598e-07 7C0.000272186 6.09228 0.812008 5.35644 0.812008 5.35644L5.96348 0.341797Z' fill='white' fill-opacity='0.85'/%3E%3C/svg%3E") !important;
+}
+
+.chat__form-name input:active,
+.chat__form-name input:focus,
+.chat__form-message textarea:active,
+.chat__form-message textarea:focus {
+    border-color: #4A86CE !important;
+}
+
+.chat__header,
+.playlist__header,
+.information-block__header,
+.settings__header,
+.settings__item {
+    border-color: #333333 !important;
+}
+
+.chat__border {
+    background-color: #333333 !important;
+}
